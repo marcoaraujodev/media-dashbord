@@ -5,16 +5,67 @@
   display: flex;
   padding: rem(36) rem(162);
   justify-content: space-between;
-  .total-followers {
-    color: var(--desaturetedText);
-    font-weight: bold;
-    line-height: rem(17);
-    font-size: rem(14);
+
+  &__text-area {
+    span {
+      color: var(--desaturetedText);
+      font-weight: bold;
+      line-height: rem(17);
+      font-size: rem(14);
+    }
+
+    h1 {
+      color: var(--text);
+      font-weight: bold;
+      line-height: rem(34);
+      font-size: rem(28);
+    }
   }
-  h1 {
-    color: var(--text);
-    font-weight: bold;
-    line-height: rem(34);
-    font-size: rem(28);
+
+  &__switcher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(16) 0;
+
+    span {
+      margin-right: rem(15);
+      font-weight: bold;
+      font-size: rem(15);
+      line-height: rem(17);
+      color: var(--text);
+    }
+
+    button {
+      height: 24px;
+      width: 48px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(
+        to left,
+        hsl(210, 78%, 56%),
+        hsl(146, 68%, 55%)
+      );
+      position: relative;
+      cursor: pointer;
+
+      &.light-theme::before {
+        left: calc(100% - 21px);
+        background: white;
+      }
+
+      &::before {
+        content: "";
+        height: 18px;
+        width: 18px;
+        background: var(--pageTopBackground);
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3px;
+        transition: left 0.2s ease, background-color 0.2s ease;
+      }
+    }
   }
 }
