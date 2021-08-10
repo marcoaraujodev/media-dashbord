@@ -1,0 +1,5 @@
+@use "./core/globals.scss" as *;
+@use "./core/colors.scss" as *;
+h1 {
+  color: var(--red);
+}
