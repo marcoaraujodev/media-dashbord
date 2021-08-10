@@ -10,3 +10,11 @@
   --desaturetedText: hsl(228, 34%, 66%);
   --text: hsl(0, 0%, 100%);
 }
+
+[data-theme="light"] {
+  --pageBackground: hsl(0, 0%, 100%);
+  --pageTopBackground: hsl(227, 91%, 100%);
+  --cardBackground: hsl(228, 46%, 96%);
+  --desaturatedText: hsl(230, 12%, 44%);
+  --text: hsl(0, 0%, 0%);
+}
