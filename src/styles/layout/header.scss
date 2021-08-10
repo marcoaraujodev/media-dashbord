@@ -1,0 +1,20 @@
+@use "../core/colors.scss" as *;
+@use "../core/functions.scss" as *;
+
+.header {
+  display: flex;
+  padding: rem(36) rem(162);
+  justify-content: space-between;
+  .total-followers {
+    color: var(--desaturetedText);
+    font-weight: bold;
+    line-height: rem(17);
+    font-size: rem(14);
+  }
+  h1 {
+    color: var(--text);
+    font-weight: bold;
+    line-height: rem(34);
+    font-size: rem(28);
+  }
+}
