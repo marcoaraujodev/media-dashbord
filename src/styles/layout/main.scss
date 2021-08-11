@@ -1,0 +1,52 @@
+@use "../core/colors.scss" as *;
+@use "../core/functions.scss" as *;
+
+main {
+  .facebook {
+    border-top: 5px solid var(--facebook);
+    background-color: var(--cardBackground);
+    width: rem(350);
+    height: rem(230);
+    border-radius: rem(5);
+    display: flex;
+    flex-direction: column;
+    margin: rem(46) rem(165);
+    align-items: center;
+    padding-top: rem(31);
+  }
+  .facebookToday {
+    color: var(--limeGreen);
+    height: rem(15);
+    font-weight: bold;
+    font-size: rem(15);
+    line-height: rem(15);
+    margin-top: rem(25);
+  }
+  .facebook-Followers {
+    margin-top: rem(9);
+    font-weight: normal;
+    font-size: rem(15);
+    line-height: rem(17);
+    letter-spacing: rem(5);
+    text-transform: uppercase;
+    color: var(--desaturetedText);
+  }
+  .strongDiv {
+    line-height: rem(48);
+    font-weight: bold;
+    letter-spacing: rem(-2);
+    font-size: rem(56);
+    color: var(--text);
+  }
+  .facebookItsnofen {
+    margin-bottom: rem(30);
+    display: flex;
+    align-items: center;
+  }
+  .facebookItsnofen span {
+    padding-left: rem(9);
+    color: var(--desaturetedText);
+    font-weight: bold;
+    line-height: rem(15);
+  }
+}
